@@ -1,0 +1,35 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Legend Code - Mac install</title>
+<style>
+:root{--bg:#14161c;--card:#1d2029;--fg:#eceef3;--dim:#9aa0ad;--acc:#F2B84B;--line:#2b2f3a}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"SF Pro Text","Geeza Pro",sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px 20px}
+h1{font-size:28px;margin:0 0 4px}h1 span{color:var(--acc)}p.sub{color:var(--dim);margin:0 0 28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:0 0 18px}
+h2{font-size:18px;margin:0 0 10px}ol{margin:0;padding-inline-start:22px}li{margin:6px 0}
+code{direction:ltr;unicode-bidi:embed;background:#0e1015;border:1px solid var(--line);border-radius:6px;padding:1px 6px;font:14px ui-monospace,Menlo,monospace}
+.cmd{display:flex;gap:8px;direction:ltr;margin:10px 0}.cmd code{flex:1;padding:10px 12px;white-space:nowrap;overflow-x:auto}
+button{background:var(--acc);color:#1a1405;border:0;border-radius:8px;padding:0 14px;font-weight:600;cursor:pointer}
+.tag{display:inline-block;background:var(--acc);color:#1a1405;border-radius:20px;padding:0 10px;font-size:13px;font-weight:600}
+.en{direction:ltr;text-align:left;color:var(--dim);font-size:14px;border-top:1px solid var(--line);margin-top:14px;padding-top:10px}
+</style></head><body><main>
+<h1>Legend <span>Code</span> للماك</h1><p class="sub">التثبيت ياخذ دقيقتين تقريبًا ومرة وحدة بس.</p>
+
+<div class="card"><h2>الطريقة الأسهل <span class="tag">ينصح بها</span></h2><ol>
+<li>افتح <b>Terminal</b>: اضغط <code>⌘ + Space</code> واكتب <code>Terminal</code> واضغط Enter.</li>
+<li>انسخ الأمر هذا والصقه في Terminal واضغط <b>Enter</b>:
+<div class="cmd"><code id="c1">curl -fsSL https://raw.githubusercontent.com/MATRIX5578/legend-code/main/mac/install-mac.sh | bash</code><button onclick="navigator.clipboard.writeText(document.getElementById('c1').textContent);this.textContent='✓'">Copy</button></div></li>
+<li>لو طلب <b>Password</b>: اكتب كلمة سر الماك واضغط Enter. <span style="color:var(--dim)">(الحروف ما تبان وأنت تكتب، هذا طبيعي)</span></li>
+<li>خلاص. البرنامج ينفتح لحاله، وتلقاه بعدين بالبحث <code>⌘ + Space</code> ← Legend Code.</li></ol>
+<p class="en">Open Terminal (⌘+Space → Terminal), paste the command above, press Enter, type your Mac password if asked. Legend Code opens when done.</p></div>
+
+<div class="card"><h2>من الملفات اللي معك (بدون نت)</h2><ol>
+<li>افتح Terminal واكتب <code>bash </code> (bash ومسافة).</li>
+<li>اسحب ملف <code>install.sh</code> من هذا المجلد وحطه داخل Terminal، واضغط Enter.</li></ol>
+<p class="en">Type <code>bash </code> in Terminal, drag install.sh into it, press Enter.</p></div>
+
+<div class="card"><h2>لو صارت مشكلة</h2><ol>
+<li><b>"Legend Code is damaged" أو "can't be opened"</b>: لا تفتحه من مجلد التنزيلات، ثبّته بالطريقة الأسهل فوق، هي تحل هذا.</li>
+<li><b>طلعت رسالة خطأ</b>: أرسل الملف <code>~/Library/Logs/LegendCode.log</code> (في Finder اضغط <code>⌘ + Shift + G</code> والصق المسار).</li>
+<li>يشتغل على macOS 11 (Big Sur) وأحدث، على Apple Silicon و Intel.</li></ol></div>
+</main></body></html>

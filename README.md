@@ -10,7 +10,7 @@ No account. No setup. Just download and code.
 
 [![Download for Windows](https://img.shields.io/badge/Download-Windows-F2B84B?style=for-the-badge&logo=windows&logoColor=black)](https://github.com/MATRIX5578/legend-code/releases/latest/download/Legend-Code-Windows.zip)
 &nbsp;
-[![Download for Mac](https://img.shields.io/badge/Download-macOS-1f2430?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/MATRIX5578/legend-code/releases/latest/download/Legend-Code-Mac.zip)
+[![Download for Mac](https://img.shields.io/badge/Download-macOS-1f2430?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/MATRIX5578/legend-code/raw/main/mac/Legend-Code-Mac.zip)
 
 <img src="https://github.com/MATRIX5578/legend-code/releases/download/v3.0.20/2-editor-ai.png" alt="Legend Code with the AI assistant" width="100%">
 
@@ -41,7 +41,14 @@ No account. No setup. Just download and code.
 **Windows** — download, unzip, open `Legend Code.exe`. Nothing else to install.
 If Windows shows *"Windows protected your PC"*, click **More info → Run anyway** (the app is not code-signed yet).
 
-**macOS** — install Python once from [python.org](https://www.python.org/downloads/macos/), download the Mac zip, then run `install.sh` (see `README.txt` inside).
+**macOS** — open **Terminal** (⌘ + Space → Terminal), paste this and press Enter:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/MATRIX5578/legend-code/main/mac/install-mac.sh | bash
+```
+
+It installs Python if needed (asks your Mac password once), installs Legend Code and opens it. Works on macOS 11+ (Apple Silicon and Intel).
+Step-by-step guide with pictures in Arabic & English: [install-guide.html](mac/install-guide.html) (also inside the Mac zip).
 
 ## Keyboard
 
